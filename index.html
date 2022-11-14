@@ -39,7 +39,73 @@
             </section>
 
             <main id="content">
-                <section id="leftBar"></section>
+                <section id="leftBar">
+                    <div id="popular">
+                        <div class="box">
+                            <input class="checkbox" type="checkbox" />
+                        </div>
+
+                        <div id="leftTag">
+                            <img
+                                src="./public/red_tag.svg"
+                                alt="Popular"
+                                id="leftTagRect"
+                            />
+
+                            <img
+                                src="./public/crown.svg"
+                                alt="Crown"
+                                id="leftCrown"
+                            />
+                            <span id="leftPopular">Popular</span>
+                        </div>
+                    </div>
+                    <div id="topicsLabel">
+                        <img src="./public/topics.svg" alt="topics" />
+                        <span>TOPICS</span>
+                        <img src="./public/arrow.svg" alt="arrow" />
+                    </div>
+                    <div>
+                        <input
+                            class="input"
+                            placeholder="Search by Topics, Content, Keywords..."
+                        />
+                    </div>
+
+                    <div id="topics">
+                        <div class="checkboxLabel">
+                            <input class="checkbox" type="checkbox" />
+                            <label>Startup Fundraising</label>
+                        </div>
+                        <div class="checkboxLabel">
+                            <input class="checkbox" type="checkbox" />
+                            <label>Growth Hacking</label>
+                        </div>
+                        <div class="checkboxLabel">
+                            <input class="checkbox" type="checkbox" />
+                            <label>Leadership</label>
+						</div>
+                        <div class="checkboxLabel">
+                            <input class="checkbox" type="checkbox" />
+                            <label>Startup Growth</label>
+                        </div>
+						
+                        <div class="checkboxLabel">
+                            <input class="checkbox" type="checkbox" />
+                            <label>Idea to Launch</label>
+                        </div>
+						<div class="checkboxLabel">
+                            <input class="checkbox" type="checkbox" />
+                            <label>Entrepreneurship</label>
+                        </div>
+						<div class="checkboxLabel">
+                            <input class="checkbox" type="checkbox" />
+                            <label>Customer Acquisition</label>
+                        </div>
+                    </div>
+
+					
+                </section>
                 <section id="books">
                     <div class="book">
                         <div id="bookImage">
@@ -49,18 +115,451 @@
                             />
                         </div>
                         <div id="bookInfo">
-                            <span>Popular</span>
-                            <span id="bookTitle">Zero To One</span>
-                            <p><i>Peter Thiel — published Sep 16, 2014</i></p>
-                            <div id="ratings">
-                                <span>Goodreads rating: 4.2</span>
-                                <span id="ratingsCount">294,243 ratings</span>
+                            <div class="tag">
+                                <img
+                                    src="./public/red_tag.svg"
+                                    alt="Popular"
+                                    class="tagRect"
+                                />
+                                <span class="tagSpan">Popular</span>
                             </div>
+                            <section id="bookInfoSection">
+                                <span id="bookTitle">Zero To One</span>
 
-							<div id="buttons">
-								<button id="amazon">View on Amazon</button>
-								<button id="bookDetails">View Details</button>
-							</div>
+                                <span id="bookAuthor"
+                                    ><i
+                                        >Peter Thiel — published Sep 16, 2014</i
+                                    ></span
+                                >
+
+                                <div id="ratings">
+                                    <span id="ratingSpan"
+                                        >Goodreads rating</span
+                                    >
+                                    <div class="ratingStars">
+                                        <div
+                                            class="ratingUpper"
+                                            style="width: 84%"
+                                        >
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                        <div class="ratingLower">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                    </div>
+                                    <span id="rating">4.2</span>
+                                    <span id="ratingsCount"
+                                        >294,243 ratings</span
+                                    >
+                                </div>
+
+                                <div id="buttons">
+                                    <button class="btn" id="amazon">
+                                        View on Amazon
+                                    </button>
+                                    <button class="btn" id="bookDetails">
+                                        View Details
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div id="bookImage">
+                            <img
+                                src="./public/sample_book.svg"
+                                alt="Sample Book"
+                            />
+                        </div>
+                        <div id="bookInfo">
+                            <div class="tag">
+                                <img
+                                    src="./public/red_tag.svg"
+                                    alt="Popular"
+                                    class="tagRect"
+                                />
+                                <span class="tagSpan">Popular</span>
+                            </div>
+                            <section id="bookInfoSection">
+                                <span id="bookTitle">Zero To One</span>
+
+                                <span id="bookAuthor"
+                                    ><i
+                                        >Peter Thiel — published Sep 16, 2014</i
+                                    ></span
+                                >
+
+                                <div id="ratings">
+                                    <span id="ratingSpan"
+                                        >Goodreads rating</span
+                                    >
+                                    <div class="ratingStars">
+                                        <div
+                                            class="ratingUpper"
+                                            style="width: 84%"
+                                        >
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                        <div class="ratingLower">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                    </div>
+                                    <span id="rating">4.2</span>
+                                    <span id="ratingsCount"
+                                        >294,243 ratings</span
+                                    >
+                                </div>
+
+                                <div id="buttons">
+                                    <button class="btn" id="amazon">
+                                        View on Amazon
+                                    </button>
+                                    <button class="btn" id="bookDetails">
+                                        View Details
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div id="bookImage">
+                            <img
+                                src="./public/sample_book.svg"
+                                alt="Sample Book"
+                            />
+                        </div>
+                        <div id="bookInfo">
+                            <div class="tag">
+                                <img
+                                    src="./public/red_tag.svg"
+                                    alt="Popular"
+                                    class="tagRect"
+                                />
+                                <span class="tagSpan">Popular</span>
+                            </div>
+                            <section id="bookInfoSection">
+                                <span id="bookTitle">Zero To One</span>
+
+                                <span id="bookAuthor"
+                                    ><i
+                                        >Peter Thiel — published Sep 16, 2014</i
+                                    ></span
+                                >
+
+                                <div id="ratings">
+                                    <span id="ratingSpan"
+                                        >Goodreads rating</span
+                                    >
+                                    <div class="ratingStars">
+                                        <div
+                                            class="ratingUpper"
+                                            style="width: 84%"
+                                        >
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                        <div class="ratingLower">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                    </div>
+                                    <span id="rating">4.2</span>
+                                    <span id="ratingsCount"
+                                        >294,243 ratings</span
+                                    >
+                                </div>
+
+                                <div id="buttons">
+                                    <button class="btn" id="amazon">
+                                        View on Amazon
+                                    </button>
+                                    <button class="btn" id="bookDetails">
+                                        View Details
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div id="bookImage">
+                            <img
+                                src="./public/sample_book.svg"
+                                alt="Sample Book"
+                            />
+                        </div>
+                        <div id="bookInfo">
+                            <div class="tag">
+                                <img
+                                    src="./public/red_tag.svg"
+                                    alt="Popular"
+                                    class="tagRect"
+                                />
+                                <span class="tagSpan">Popular</span>
+                            </div>
+                            <section id="bookInfoSection">
+                                <span id="bookTitle">Zero To One</span>
+
+                                <span id="bookAuthor"
+                                    ><i
+                                        >Peter Thiel — published Sep 16, 2014</i
+                                    ></span
+                                >
+
+                                <div id="ratings">
+                                    <span id="ratingSpan"
+                                        >Goodreads rating</span
+                                    >
+                                    <div class="ratingStars">
+                                        <div
+                                            class="ratingUpper"
+                                            style="width: 84%"
+                                        >
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                        <div class="ratingLower">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                    </div>
+                                    <span id="rating">4.2</span>
+                                    <span id="ratingsCount"
+                                        >294,243 ratings</span
+                                    >
+                                </div>
+
+                                <div id="buttons">
+                                    <button class="btn" id="amazon">
+                                        View on Amazon
+                                    </button>
+                                    <button class="btn" id="bookDetails">
+                                        View Details
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div id="bookImage">
+                            <img
+                                src="./public/sample_book.svg"
+                                alt="Sample Book"
+                            />
+                        </div>
+                        <div id="bookInfo">
+                            <div class="tag">
+                                <img
+                                    src="./public/red_tag.svg"
+                                    alt="Popular"
+                                    class="tagRect"
+                                />
+                                <span class="tagSpan">Popular</span>
+                            </div>
+                            <section id="bookInfoSection">
+                                <span id="bookTitle">Zero To One</span>
+
+                                <span id="bookAuthor"
+                                    ><i
+                                        >Peter Thiel — published Sep 16, 2014</i
+                                    ></span
+                                >
+
+                                <div id="ratings">
+                                    <span id="ratingSpan"
+                                        >Goodreads rating</span
+                                    >
+                                    <div class="ratingStars">
+                                        <div
+                                            class="ratingUpper"
+                                            style="width: 84%"
+                                        >
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                        <div class="ratingLower">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                    </div>
+                                    <span id="rating">4.2</span>
+                                    <span id="ratingsCount"
+                                        >294,243 ratings</span
+                                    >
+                                </div>
+
+                                <div id="buttons">
+                                    <button class="btn" id="amazon">
+                                        View on Amazon
+                                    </button>
+                                    <button class="btn" id="bookDetails">
+                                        View Details
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div id="bookImage">
+                            <img
+                                src="./public/sample_book.svg"
+                                alt="Sample Book"
+                            />
+                        </div>
+                        <div id="bookInfo">
+                            <div class="tag">
+                                <img
+                                    src="./public/red_tag.svg"
+                                    alt="Popular"
+                                    class="tagRect"
+                                />
+                                <span class="tagSpan">Popular</span>
+                            </div>
+                            <section id="bookInfoSection">
+                                <span id="bookTitle">Zero To One</span>
+
+                                <span id="bookAuthor"
+                                    ><i
+                                        >Peter Thiel — published Sep 16, 2014</i
+                                    ></span
+                                >
+
+                                <div id="ratings">
+                                    <span id="ratingSpan"
+                                        >Goodreads rating</span
+                                    >
+                                    <div class="ratingStars">
+                                        <div
+                                            class="ratingUpper"
+                                            style="width: 84%"
+                                        >
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                        <div class="ratingLower">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                    </div>
+                                    <span id="rating">4.2</span>
+                                    <span id="ratingsCount"
+                                        >294,243 ratings</span
+                                    >
+                                </div>
+
+                                <div id="buttons">
+                                    <button class="btn" id="amazon">
+                                        View on Amazon
+                                    </button>
+                                    <button class="btn" id="bookDetails">
+                                        View Details
+                                    </button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="book">
+                        <div id="bookImage">
+                            <img
+                                src="./public/sample_book.svg"
+                                alt="Sample Book"
+                            />
+                        </div>
+                        <div id="bookInfo">
+                            <div class="tag">
+                                <img
+                                    src="./public/red_tag.svg"
+                                    alt="Popular"
+                                    class="tagRect"
+                                />
+                                <span class="tagSpan">Popular</span>
+                            </div>
+                            <section id="bookInfoSection">
+                                <span id="bookTitle">Zero To One</span>
+
+                                <span id="bookAuthor"
+                                    ><i
+                                        >Peter Thiel — published Sep 16, 2014</i
+                                    ></span
+                                >
+
+                                <div id="ratings">
+                                    <span id="ratingSpan"
+                                        >Goodreads rating</span
+                                    >
+                                    <div class="ratingStars">
+                                        <div
+                                            class="ratingUpper"
+                                            style="width: 84%"
+                                        >
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                        <div class="ratingLower">
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                            <span>★</span>
+                                        </div>
+                                    </div>
+                                    <span id="rating">4.2</span>
+                                    <span id="ratingsCount"
+                                        >294,243 ratings</span
+                                    >
+                                </div>
+
+                                <div id="buttons">
+                                    <button class="btn" id="amazon">
+                                        View on Amazon
+                                    </button>
+                                    <button class="btn" id="bookDetails">
+                                        View Details
+                                    </button>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </section>
