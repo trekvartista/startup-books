@@ -52,8 +52,12 @@ body {
 
 #sectionLeft {
     background: #2d2c45;
-    padding: 80px 100px;
+    padding: 60px 100px;
     width: 50%;
+}
+
+#attract {
+	font-size: 32px;
 }
 
 .link:hover {
