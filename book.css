@@ -1,0 +1,114 @@
+#content {
+    display: flex;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    max-width: 240px;
+    flex-shrink: 0;
+
+    padding: 30px;
+    border-right: 2px solid black;
+}
+
+.bookSection {
+    padding: 24px 0;
+    border-bottom: 2px solid white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookSection h3 {
+    color: #c4c4c4;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.bookSection p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.info {
+    color: #c4c4c4;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#bookRating {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.ratingStars {
+    margin-bottom: 24px;
+}
+
+.ratingLower {
+    font-size: 36px;
+}
+
+.ratingUpper {
+    font-size: 36px;
+}
+
+#ratingsCount {
+    color: #8e8e8e;
+    font-size: 16px;
+}
+
+#year {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#date {
+    font-size: 24px;
+}
+
+/* RIGHT */
+
+#right {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+}
+
+#title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #c4c4c4;
+}
+
+#author {
+	margin-top: 6px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+#description {
+	margin-top: 24px;
+
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+
+    color: #ffffff;
+}
