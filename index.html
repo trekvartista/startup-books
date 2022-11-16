@@ -8,25 +8,30 @@
 
     <body>
         <div id="main">
-            <header id="header">
-                <div id="logo">
-                    <img src="./public/IH_logo.svg" alt="Investor Hunt Logo" />
-                </div>
-                <div id="navbar">
-                    <a class="link">Integrations</a>
-                    <a class="link">Templates</a>
-                    <a class="link">Investors</a>
-                    <a class="link">Blog</a>
-                    <a class="link">Pricing</a>
-                    <a class="link">Sign In</a>
-                    <button id="startBtn">Get Started</button>
-                </div>
-            </header>
+			<nav id="navbar">
+				<div id="logo">
+					<img src="./public/IH_logo.svg" alt="Investor Hunt Logo" />
+				</div>
+				<input id="menuToggle" type="checkbox" />
+				<label id='menuButtonContainer' for="menuToggle">
+					<div id='menuButton'></div>
+				</label>
+			
+				<ul id="menu">
+					<li><a class="link" href="https://investorhunt.co/integrations">Integrations</a></li>
+					<li><a class="link" href="https://investorhunt.co/templates">Templates</a></li>
+					<li><a class="link" href="https://investorhunt.co/investors">Investors</a></li>
+					<li><a class="link" href="https://investorhunt.co/blogs">Blog</a></li>
+					<li><a class="link" href="https://investorhunt.co/pricing">Pricing</a></li>
+					<li><a class="link" href="https://investorhunt.co/users/sign_in">Sign In</a></li>
+					<li><button id="startBtn"><a href="https://investorhunt.co/users/sign_up">Get Started</a></button></li>
+				</ul>
+			</nav>
 
             <section id="section">
                 <article id="sectionLeft">
                     <h1 id="attract">650+ Best Startup Books</h1>
-                    <h3 style="font-weight: 500;">
+                    <h3 style="font-weight: 500">
                         The biggest curated collection of startup books on
                         internet. Search for books by title, topic, genre,
                         popularity and author.
@@ -34,14 +39,18 @@
                     <img src="./public/top_3_product.svg" alt="Top 3 Product" />
                 </article>
                 <section id="sectionRight">
-                    <img src="./public/startup_books.svg" alt="Startup Books" id="startupBooks" />
+                    <img
+                        src="./public/startup_books.svg"
+                        alt="Startup Books"
+                        id="startupBooks"
+                    />
                 </section>
             </section>
 
             <main id="content">
-				<section id="hiddenBar">
-					<input class="input" placeholder="Search by Topic..."/>
-				</section>
+                <section id="hiddenBar">
+                    <input class="input" placeholder="Search by Topic..." />
+                </section>
                 <section id="leftBar">
                     <div id="popular">
                         <div class="box">
@@ -119,7 +128,6 @@
                         <img src="./public/arrow.svg" alt="arrow" />
                     </div>
                     <input class="input" placeholder="Search by Author..." />
-
                 </section>
                 <section id="books">
                     <div class="book">
