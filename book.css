@@ -1,7 +1,7 @@
-#content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#bookPage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #left {
@@ -14,8 +14,7 @@
 }
 
 #bookInfo {
-    max-height: 150px;
-    overflow: hidden;
+	position: relative;
 }
 
 #imgDiv {
@@ -41,7 +40,7 @@
 	border: none;
 }
 
-.bookSection h3 {
+.subheading {
     color: #c4c4c4;
     font-weight: 700;
     font-size: 24px;
@@ -55,6 +54,60 @@
     text-align: center;
 
     color: #ffffff;
+}
+
+.bookSection {
+	margin-top: 12px;
+}
+
+#bookInfo > .bookSection {
+	margin-top: 24px;
+}
+
+#hidden {
+	display: none;
+}
+
+#moreLabel {
+	position: absolute;
+	top: 100%;
+	right: 0;
+}
+
+#more {
+	display: none;
+}
+
+#moreLabel:hover {
+	border-bottom: 2px solid #fff;
+}
+
+#moreLabel:after {
+	content: "Show more...";
+
+	cursor: pointer;
+	font-size: 18px;
+	color: #fff;
+}
+
+#more:checked + #moreLabel::after {
+	content: "Show less...";
+
+	cursor: pointer;
+	font-size: 18px;
+	color: #fff;
+}
+
+#more:checked ~ #hidden {
+	display: flex;
+	flex-direction: column;
+
+	height: 100%;
+	margin-bottom: 24px;
+}
+
+#more:not(:checked) ~ .bookSection {
+	border: none;
 }
 
 .info {
@@ -84,6 +137,7 @@
 #ratingsCount {
     color: #8e8e8e;
     font-size: 16px;
+	margin-bottom: 12px;
 }
 
 #year {
@@ -98,6 +152,7 @@
 /* RIGHT */
 
 #right {
+	margin-top: 24px;
     display: flex;
     flex-direction: column;
 
@@ -135,9 +190,24 @@
     }
     .bookSection {
         padding: 24px 0;
+		border-bottom: 2px solid white;
     }
 
-    #content {
+	#bookInfo > .bookSection {
+		margin: 0;
+		border-bottom: 2px solid white;
+	}
+
+	#moreLabel {
+		display: none;
+	}
+
+	#hidden {
+		display: flex;
+		flex-direction: column;
+	}
+
+    #bookPage {
         flex-direction: row;
         align-items: flex-start;
     }

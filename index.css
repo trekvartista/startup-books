@@ -232,7 +232,7 @@ body {
 
 .book {
     max-width: 240px;
-    max-height: 380px;
+    max-height: 360px;
 
     display: flex;
     flex-direction: column;
