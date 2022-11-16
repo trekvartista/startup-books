@@ -1,23 +1,34 @@
 #content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #left {
     display: flex;
     flex-direction: column;
 
+    padding: 30px;
     align-items: center;
     text-align: center;
-    height: 100%;
-    max-width: 240px;
-    flex-shrink: 0;
+}
 
-    padding: 30px;
-    border-right: 2px solid black;
+#bookInfo {
+    max-height: 150px;
+    overflow: hidden;
+}
+
+#imgDiv {
+    height: 350px;
+}
+
+#bookImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .bookSection {
-    padding: 24px 0;
     border-bottom: 2px solid white;
 
     display: flex;
@@ -85,7 +96,7 @@
     display: flex;
     flex-direction: column;
 
-    padding: 30px;
+    padding: 0 30px;
 }
 
 #title {
@@ -97,18 +108,43 @@
 }
 
 #author {
-	margin-top: 6px;
+    margin-top: 6px;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
 }
 
 #description {
-	margin-top: 24px;
+    margin-top: 24px;
 
     font-weight: 400;
     font-size: 19px;
     line-height: 27px;
 
     color: #ffffff;
+}
+
+@media (min-width: 700px) {
+    #bookInfo {
+        max-height: none;
+    }
+    .bookSection {
+        padding: 24px 0;
+    }
+
+    #content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    #left {
+        height: 100%;
+        max-width: 240px;
+        flex-shrink: 0;
+
+        border-right: 2px solid black;
+    }
+
+    #right {
+        padding: 30px;
+    }
 }
