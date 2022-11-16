@@ -8,30 +8,64 @@
 
     <body>
         <div id="main">
-			<nav id="navbar">
-				<div id="logo">
-					<img src="./public/IH_logo.svg" alt="Investor Hunt Logo" />
-				</div>
-				<input id="menuToggle" type="checkbox" />
-				<label id='menuButtonContainer' for="menuToggle">
-					<div id='menuButton'></div>
-				</label>
-			
-				<ul id="menu">
-					<li><a class="link" href="https://investorhunt.co/integrations">Integrations</a></li>
-					<li><a class="link" href="https://investorhunt.co/templates">Templates</a></li>
-					<li><a class="link" href="https://investorhunt.co/investors">Investors</a></li>
-					<li><a class="link" href="https://investorhunt.co/blogs">Blog</a></li>
-					<li><a class="link" href="https://investorhunt.co/pricing">Pricing</a></li>
-					<li><a class="link" href="https://investorhunt.co/users/sign_in">Sign In</a></li>
-					<li><button id="startBtn"><a href="https://investorhunt.co/users/sign_up">Get Started</a></button></li>
-				</ul>
-			</nav>
+            <nav id="navbar">
+                <div id="logo">
+                    <img src="./public/IH_logo.svg" alt="Investor Hunt Logo" />
+                </div>
+                <input id="menuToggle" type="checkbox" />
+                <label id="menuButtonContainer" for="menuToggle">
+                    <div id="menuButton"></div>
+                </label>
+
+                <ul id="menu">
+                    <li>
+                        <a
+                            class="link"
+                            href="https://investorhunt.co/integrations"
+                            >Integrations</a
+                        >
+                    </li>
+                    <li>
+                        <a class="link" href="https://investorhunt.co/templates"
+                            >Templates</a
+                        >
+                    </li>
+                    <li>
+                        <a class="link" href="https://investorhunt.co/investors"
+                            >Investors</a
+                        >
+                    </li>
+                    <li>
+                        <a class="link" href="https://investorhunt.co/blogs"
+                            >Blog</a
+                        >
+                    </li>
+                    <li>
+                        <a class="link" href="https://investorhunt.co/pricing"
+                            >Pricing</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="link"
+                            href="https://investorhunt.co/users/sign_in"
+                            >Sign In</a
+                        >
+                    </li>
+                    <li>
+                        <button id="startBtn">
+                            <a href="https://investorhunt.co/users/sign_up"
+                                >Get Started</a
+                            >
+                        </button>
+                    </li>
+                </ul>
+            </nav>
 
             <section id="section">
                 <article id="sectionLeft">
-                    <h1 id="attract">650+ Best Startup Books</h1>
-                    <h3 style="font-weight: 500">
+                    <span id="attract">650+ Best Startup Books</span>
+                    <h3 style="font-weight: 400">
                         The biggest curated collection of startup books on
                         internet. Search for books by title, topic, genre,
                         popularity and author.
@@ -47,10 +81,7 @@
                 </section>
             </section>
 
-            <main id="content">
-                <section id="hiddenBar">
-                    <input class="input" placeholder="Search by Topic..." />
-                </section>
+            <main id="wrapper">
                 <section id="leftBar">
                     <div id="popular">
                         <div class="box">
@@ -80,7 +111,7 @@
                     </div>
                     <input
                         class="input"
-                        placeholder="Search by Topics, Content, Keywords..."
+                        placeholder="Search Topics..."
                     />
 
                     <div id="topics">
@@ -120,472 +151,572 @@
                         <span>GENRES</span>
                         <img src="./public/arrow.svg" alt="arrow" />
                     </div>
-                    <input class="input" placeholder="Search by Genres..." />
+                    <input class="input" placeholder="Search Genres..." />
 
                     <div class="filterLabel">
                         <img src="./public/author.svg" alt="author" />
                         <span>AUTHOR</span>
                         <img src="./public/arrow.svg" alt="arrow" />
                     </div>
-                    <input class="input" placeholder="Search by Author..." />
+                    <input class="input" placeholder="Search Author..." />
                 </section>
-                <section id="books">
-                    <div class="book">
-                        <div id="bookImage">
-                            <img
-                                src="./public/sample_book.svg"
-                                alt="Sample Book"
-                            />
-                        </div>
-                        <div id="bookInfo">
-                            <div class="tag">
+
+                <div id="content">
+                    <section id="searchBar">
+                        <input class="input" placeholder="Search..." />
+                    </section>
+					<div id="results">
+						<span id="resultsText">Results: 537</span>
+						<input type="checkbox" />
+						<div id="cross">&times;</div>
+						<img id="filters" src="./public/menu.svg" alt="Menu">
+						<section id="modal">
+							<div id="modalContent">
+								<div id="popular">
+									<div class="box">
+										<input class="checkbox" type="checkbox" />
+									</div>
+			
+									<div id="leftTag">
+										<img
+											src="./public/red_tag.svg"
+											alt="Popular"
+											id="leftTagRect"
+										/>
+			
+										<img
+											src="./public/crown.svg"
+											alt="Crown"
+											id="leftCrown"
+										/>
+										<span id="leftPopular">Popular</span>
+									</div>
+								</div>
+			
+								<div class="filterLabel">
+									<img src="./public/topics.svg" alt="topics" />
+									<span>TOPICS</span>
+									<img src="./public/arrow.svg" alt="arrow" />
+								</div>
+								<input
+									class="input"
+									placeholder="Search Topics..."
+								/>
+			
+								<div id="topics">
+									<div class="checkboxLabel">
+										<input class="checkbox" type="checkbox" />
+										<label>Startup Fundraising</label>
+									</div>
+									<div class="checkboxLabel">
+										<input class="checkbox" type="checkbox" />
+										<label>Growth Hacking</label>
+									</div>
+									<div class="checkboxLabel">
+										<input class="checkbox" type="checkbox" />
+										<label>Leadership</label>
+									</div>
+									<div class="checkboxLabel">
+										<input class="checkbox" type="checkbox" />
+										<label>Startup Growth</label>
+									</div>
+			
+									<div class="checkboxLabel">
+										<input class="checkbox" type="checkbox" />
+										<label>Idea to Launch</label>
+									</div>
+									<div class="checkboxLabel">
+										<input class="checkbox" type="checkbox" />
+										<label>Entrepreneurship</label>
+									</div>
+									<div class="checkboxLabel">
+										<input class="checkbox" type="checkbox" />
+										<label>Customer Acquisition</label>
+									</div>
+								</div>
+			
+								<div class="filterLabel">
+									<img src="./public/genre.svg" alt="genres" />
+									<span>GENRES</span>
+									<img src="./public/arrow.svg" alt="arrow" />
+								</div>
+								<input class="input" placeholder="Search Genres..." />
+			
+								<div class="filterLabel">
+									<img src="./public/author.svg" alt="author" />
+									<span>AUTHOR</span>
+									<img src="./public/arrow.svg" alt="arrow" />
+								</div>
+								<input class="input" placeholder="Search Author..." />
+								
+							</div>
+						</section>
+					</div>
+                    <section id="books">
+                        <div class="book">
+                            <div id="bookImage">
                                 <img
-                                    src="./public/red_tag.svg"
-                                    alt="Popular"
-                                    class="tagRect"
+                                    src="./public/sample_book.svg"
+                                    alt="Sample Book"
                                 />
-                                <span class="tagSpan">Popular</span>
                             </div>
-                            <section id="bookInfoSection">
-                                <span id="bookTitle">Zero To One</span>
+                            <div id="bookInfo">
+                                <div class="tag">
+                                    <img
+                                        src="./public/red_tag.svg"
+                                        alt="Popular"
+                                        class="tagRect"
+                                    />
+                                    <span class="tagSpan">Popular</span>
+                                </div>
+                                <section id="bookInfoSection">
+                                    <span id="bookTitle">Zero To One</span>
 
-                                <span id="bookAuthor"
-                                    ><i
-                                        >Peter Thiel — published Sep 16, 2014</i
-                                    ></span
-                                >
-
-                                <div id="ratings">
-                                    <span id="ratingSpan"
-                                        >Goodreads rating</span
+                                    <span id="bookAuthor"
+                                        ><i
+                                            >Peter Thiel — published Sep 16,
+                                            2014</i
+                                        ></span
                                     >
-                                    <div class="ratingStars">
-                                        <div
-                                            class="ratingUpper"
-                                            style="width: 84%"
+
+                                    <div id="ratings">
+                                        <span id="ratingSpan"
+                                            >Goodreads rating</span
                                         >
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
+                                        <div class="ratingStars">
+                                            <div
+                                                class="ratingUpper"
+                                                style="width: 84%"
+                                            >
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="ratingLower">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
                                         </div>
-                                        <div class="ratingLower">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                        </div>
+                                        <span id="rating">4.2</span>
+                                        <span id="ratingsCount"
+                                            >294,243 ratings</span
+                                        >
                                     </div>
-                                    <span id="rating">4.2</span>
-                                    <span id="ratingsCount"
-                                        >294,243 ratings</span
-                                    >
-                                </div>
 
-                                <div id="buttons">
-                                    <button class="btn" id="amazon">
-                                        View on Amazon
-                                    </button>
-                                    <button class="btn" id="bookDetails">
-                                        View Details
-                                    </button>
-                                </div>
-                            </section>
+                                    <div id="buttons">
+                                        <button class="btn" id="amazon">
+                                            View on Amazon
+                                        </button>
+                                        <button class="btn" id="bookDetails">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                    <div class="book">
-                        <div id="bookImage">
-                            <img
-                                src="./public/sample_book.svg"
-                                alt="Sample Book"
-                            />
-                        </div>
-                        <div id="bookInfo">
-                            <div class="tag">
+                        <div class="book">
+                            <div id="bookImage">
                                 <img
-                                    src="./public/red_tag.svg"
-                                    alt="Popular"
-                                    class="tagRect"
+                                    src="./public/sample_book.svg"
+                                    alt="Sample Book"
                                 />
-                                <span class="tagSpan">Popular</span>
                             </div>
-                            <section id="bookInfoSection">
-                                <span id="bookTitle">Zero To One</span>
+                            <div id="bookInfo">
+                                <div class="tag">
+                                    <img
+                                        src="./public/red_tag.svg"
+                                        alt="Popular"
+                                        class="tagRect"
+                                    />
+                                    <span class="tagSpan">Popular</span>
+                                </div>
+                                <section id="bookInfoSection">
+                                    <span id="bookTitle">Zero To One</span>
 
-                                <span id="bookAuthor"
-                                    ><i
-                                        >Peter Thiel — published Sep 16, 2014</i
-                                    ></span
-                                >
-
-                                <div id="ratings">
-                                    <span id="ratingSpan"
-                                        >Goodreads rating</span
+                                    <span id="bookAuthor"
+                                        ><i
+                                            >Peter Thiel — published Sep 16,
+                                            2014</i
+                                        ></span
                                     >
-                                    <div class="ratingStars">
-                                        <div
-                                            class="ratingUpper"
-                                            style="width: 84%"
+
+                                    <div id="ratings">
+                                        <span id="ratingSpan"
+                                            >Goodreads rating</span
                                         >
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
+                                        <div class="ratingStars">
+                                            <div
+                                                class="ratingUpper"
+                                                style="width: 84%"
+                                            >
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="ratingLower">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
                                         </div>
-                                        <div class="ratingLower">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                        </div>
+                                        <span id="rating">4.2</span>
+                                        <span id="ratingsCount"
+                                            >294,243 ratings</span
+                                        >
                                     </div>
-                                    <span id="rating">4.2</span>
-                                    <span id="ratingsCount"
-                                        >294,243 ratings</span
-                                    >
-                                </div>
 
-                                <div id="buttons">
-                                    <button class="btn" id="amazon">
-                                        View on Amazon
-                                    </button>
-                                    <button class="btn" id="bookDetails">
-                                        View Details
-                                    </button>
-                                </div>
-                            </section>
+                                    <div id="buttons">
+                                        <button class="btn" id="amazon">
+                                            View on Amazon
+                                        </button>
+                                        <button class="btn" id="bookDetails">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                    <div class="book">
-                        <div id="bookImage">
-                            <img
-                                src="./public/sample_book.svg"
-                                alt="Sample Book"
-                            />
-                        </div>
-                        <div id="bookInfo">
-                            <div class="tag">
+                        <div class="book">
+                            <div id="bookImage">
                                 <img
-                                    src="./public/red_tag.svg"
-                                    alt="Popular"
-                                    class="tagRect"
+                                    src="./public/sample_book.svg"
+                                    alt="Sample Book"
                                 />
-                                <span class="tagSpan">Popular</span>
                             </div>
-                            <section id="bookInfoSection">
-                                <span id="bookTitle">Zero To One</span>
+                            <div id="bookInfo">
+                                <div class="tag">
+                                    <img
+                                        src="./public/red_tag.svg"
+                                        alt="Popular"
+                                        class="tagRect"
+                                    />
+                                    <span class="tagSpan">Popular</span>
+                                </div>
+                                <section id="bookInfoSection">
+                                    <span id="bookTitle">Zero To One</span>
 
-                                <span id="bookAuthor"
-                                    ><i
-                                        >Peter Thiel — published Sep 16, 2014</i
-                                    ></span
-                                >
-
-                                <div id="ratings">
-                                    <span id="ratingSpan"
-                                        >Goodreads rating</span
+                                    <span id="bookAuthor"
+                                        ><i
+                                            >Peter Thiel — published Sep 16,
+                                            2014</i
+                                        ></span
                                     >
-                                    <div class="ratingStars">
-                                        <div
-                                            class="ratingUpper"
-                                            style="width: 84%"
+
+                                    <div id="ratings">
+                                        <span id="ratingSpan"
+                                            >Goodreads rating</span
                                         >
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
+                                        <div class="ratingStars">
+                                            <div
+                                                class="ratingUpper"
+                                                style="width: 84%"
+                                            >
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="ratingLower">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
                                         </div>
-                                        <div class="ratingLower">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                        </div>
+                                        <span id="rating">4.2</span>
+                                        <span id="ratingsCount"
+                                            >294,243 ratings</span
+                                        >
                                     </div>
-                                    <span id="rating">4.2</span>
-                                    <span id="ratingsCount"
-                                        >294,243 ratings</span
-                                    >
-                                </div>
 
-                                <div id="buttons">
-                                    <button class="btn" id="amazon">
-                                        View on Amazon
-                                    </button>
-                                    <button class="btn" id="bookDetails">
-                                        View Details
-                                    </button>
-                                </div>
-                            </section>
+                                    <div id="buttons">
+                                        <button class="btn" id="amazon">
+                                            View on Amazon
+                                        </button>
+                                        <button class="btn" id="bookDetails">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                    <div class="book">
-                        <div id="bookImage">
-                            <img
-                                src="./public/sample_book.svg"
-                                alt="Sample Book"
-                            />
-                        </div>
-                        <div id="bookInfo">
-                            <div class="tag">
+                        <div class="book">
+                            <div id="bookImage">
                                 <img
-                                    src="./public/red_tag.svg"
-                                    alt="Popular"
-                                    class="tagRect"
+                                    src="./public/sample_book.svg"
+                                    alt="Sample Book"
                                 />
-                                <span class="tagSpan">Popular</span>
                             </div>
-                            <section id="bookInfoSection">
-                                <span id="bookTitle">Zero To One</span>
+                            <div id="bookInfo">
+                                <div class="tag">
+                                    <img
+                                        src="./public/red_tag.svg"
+                                        alt="Popular"
+                                        class="tagRect"
+                                    />
+                                    <span class="tagSpan">Popular</span>
+                                </div>
+                                <section id="bookInfoSection">
+                                    <span id="bookTitle">Zero To One</span>
 
-                                <span id="bookAuthor"
-                                    ><i
-                                        >Peter Thiel — published Sep 16, 2014</i
-                                    ></span
-                                >
-
-                                <div id="ratings">
-                                    <span id="ratingSpan"
-                                        >Goodreads rating</span
+                                    <span id="bookAuthor"
+                                        ><i
+                                            >Peter Thiel — published Sep 16,
+                                            2014</i
+                                        ></span
                                     >
-                                    <div class="ratingStars">
-                                        <div
-                                            class="ratingUpper"
-                                            style="width: 84%"
+
+                                    <div id="ratings">
+                                        <span id="ratingSpan"
+                                            >Goodreads rating</span
                                         >
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
+                                        <div class="ratingStars">
+                                            <div
+                                                class="ratingUpper"
+                                                style="width: 84%"
+                                            >
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="ratingLower">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
                                         </div>
-                                        <div class="ratingLower">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                        </div>
+                                        <span id="rating">4.2</span>
+                                        <span id="ratingsCount"
+                                            >294,243 ratings</span
+                                        >
                                     </div>
-                                    <span id="rating">4.2</span>
-                                    <span id="ratingsCount"
-                                        >294,243 ratings</span
-                                    >
-                                </div>
 
-                                <div id="buttons">
-                                    <button class="btn" id="amazon">
-                                        View on Amazon
-                                    </button>
-                                    <button class="btn" id="bookDetails">
-                                        View Details
-                                    </button>
-                                </div>
-                            </section>
+                                    <div id="buttons">
+                                        <button class="btn" id="amazon">
+                                            View on Amazon
+                                        </button>
+                                        <button class="btn" id="bookDetails">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                    <div class="book">
-                        <div id="bookImage">
-                            <img
-                                src="./public/sample_book.svg"
-                                alt="Sample Book"
-                            />
-                        </div>
-                        <div id="bookInfo">
-                            <div class="tag">
+                        <div class="book">
+                            <div id="bookImage">
                                 <img
-                                    src="./public/red_tag.svg"
-                                    alt="Popular"
-                                    class="tagRect"
+                                    src="./public/sample_book.svg"
+                                    alt="Sample Book"
                                 />
-                                <span class="tagSpan">Popular</span>
                             </div>
-                            <section id="bookInfoSection">
-                                <span id="bookTitle">Zero To One</span>
+                            <div id="bookInfo">
+                                <div class="tag">
+                                    <img
+                                        src="./public/red_tag.svg"
+                                        alt="Popular"
+                                        class="tagRect"
+                                    />
+                                    <span class="tagSpan">Popular</span>
+                                </div>
+                                <section id="bookInfoSection">
+                                    <span id="bookTitle">Zero To One</span>
 
-                                <span id="bookAuthor"
-                                    ><i
-                                        >Peter Thiel — published Sep 16, 2014</i
-                                    ></span
-                                >
-
-                                <div id="ratings">
-                                    <span id="ratingSpan"
-                                        >Goodreads rating</span
+                                    <span id="bookAuthor"
+                                        ><i
+                                            >Peter Thiel — published Sep 16,
+                                            2014</i
+                                        ></span
                                     >
-                                    <div class="ratingStars">
-                                        <div
-                                            class="ratingUpper"
-                                            style="width: 84%"
+
+                                    <div id="ratings">
+                                        <span id="ratingSpan"
+                                            >Goodreads rating</span
                                         >
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
+                                        <div class="ratingStars">
+                                            <div
+                                                class="ratingUpper"
+                                                style="width: 84%"
+                                            >
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="ratingLower">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
                                         </div>
-                                        <div class="ratingLower">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                        </div>
+                                        <span id="rating">4.2</span>
+                                        <span id="ratingsCount"
+                                            >294,243 ratings</span
+                                        >
                                     </div>
-                                    <span id="rating">4.2</span>
-                                    <span id="ratingsCount"
-                                        >294,243 ratings</span
-                                    >
-                                </div>
 
-                                <div id="buttons">
-                                    <button class="btn" id="amazon">
-                                        View on Amazon
-                                    </button>
-                                    <button class="btn" id="bookDetails">
-                                        View Details
-                                    </button>
-                                </div>
-                            </section>
+                                    <div id="buttons">
+                                        <button class="btn" id="amazon">
+                                            View on Amazon
+                                        </button>
+                                        <button class="btn" id="bookDetails">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                    <div class="book">
-                        <div id="bookImage">
-                            <img
-                                src="./public/sample_book.svg"
-                                alt="Sample Book"
-                            />
-                        </div>
-                        <div id="bookInfo">
-                            <div class="tag">
+                        <div class="book">
+                            <div id="bookImage">
                                 <img
-                                    src="./public/red_tag.svg"
-                                    alt="Popular"
-                                    class="tagRect"
+                                    src="./public/sample_book.svg"
+                                    alt="Sample Book"
                                 />
-                                <span class="tagSpan">Popular</span>
                             </div>
-                            <section id="bookInfoSection">
-                                <span id="bookTitle">Zero To One</span>
+                            <div id="bookInfo">
+                                <div class="tag">
+                                    <img
+                                        src="./public/red_tag.svg"
+                                        alt="Popular"
+                                        class="tagRect"
+                                    />
+                                    <span class="tagSpan">Popular</span>
+                                </div>
+                                <section id="bookInfoSection">
+                                    <span id="bookTitle">Zero To One</span>
 
-                                <span id="bookAuthor"
-                                    ><i
-                                        >Peter Thiel — published Sep 16, 2014</i
-                                    ></span
-                                >
-
-                                <div id="ratings">
-                                    <span id="ratingSpan"
-                                        >Goodreads rating</span
+                                    <span id="bookAuthor"
+                                        ><i
+                                            >Peter Thiel — published Sep 16,
+                                            2014</i
+                                        ></span
                                     >
-                                    <div class="ratingStars">
-                                        <div
-                                            class="ratingUpper"
-                                            style="width: 84%"
+
+                                    <div id="ratings">
+                                        <span id="ratingSpan"
+                                            >Goodreads rating</span
                                         >
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
+                                        <div class="ratingStars">
+                                            <div
+                                                class="ratingUpper"
+                                                style="width: 84%"
+                                            >
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="ratingLower">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
                                         </div>
-                                        <div class="ratingLower">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                        </div>
+                                        <span id="rating">4.2</span>
+                                        <span id="ratingsCount"
+                                            >294,243 ratings</span
+                                        >
                                     </div>
-                                    <span id="rating">4.2</span>
-                                    <span id="ratingsCount"
-                                        >294,243 ratings</span
-                                    >
-                                </div>
 
-                                <div id="buttons">
-                                    <button class="btn" id="amazon">
-                                        View on Amazon
-                                    </button>
-                                    <button class="btn" id="bookDetails">
-                                        View Details
-                                    </button>
-                                </div>
-                            </section>
+                                    <div id="buttons">
+                                        <button class="btn" id="amazon">
+                                            View on Amazon
+                                        </button>
+                                        <button class="btn" id="bookDetails">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                    <div class="book">
-                        <div id="bookImage">
-                            <img
-                                src="./public/sample_book.svg"
-                                alt="Sample Book"
-                            />
-                        </div>
-                        <div id="bookInfo">
-                            <div class="tag">
+                        <div class="book">
+                            <div id="bookImage">
                                 <img
-                                    src="./public/red_tag.svg"
-                                    alt="Popular"
-                                    class="tagRect"
+                                    src="./public/sample_book.svg"
+                                    alt="Sample Book"
                                 />
-                                <span class="tagSpan">Popular</span>
                             </div>
-                            <section id="bookInfoSection">
-                                <span id="bookTitle">Zero To One</span>
+                            <div id="bookInfo">
+                                <div class="tag">
+                                    <img
+                                        src="./public/red_tag.svg"
+                                        alt="Popular"
+                                        class="tagRect"
+                                    />
+                                    <span class="tagSpan">Popular</span>
+                                </div>
+                                <section id="bookInfoSection">
+                                    <span id="bookTitle">Zero To One</span>
 
-                                <span id="bookAuthor"
-                                    ><i
-                                        >Peter Thiel — published Sep 16, 2014</i
-                                    ></span
-                                >
-
-                                <div id="ratings">
-                                    <span id="ratingSpan"
-                                        >Goodreads rating</span
+                                    <span id="bookAuthor"
+                                        ><i
+                                            >Peter Thiel — published Sep 16,
+                                            2014</i
+                                        ></span
                                     >
-                                    <div class="ratingStars">
-                                        <div
-                                            class="ratingUpper"
-                                            style="width: 84%"
+
+                                    <div id="ratings">
+                                        <span id="ratingSpan"
+                                            >Goodreads rating</span
                                         >
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
+                                        <div class="ratingStars">
+                                            <div
+                                                class="ratingUpper"
+                                                style="width: 84%"
+                                            >
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
+                                            <div class="ratingLower">
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                                <span>★</span>
+                                            </div>
                                         </div>
-                                        <div class="ratingLower">
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                            <span>★</span>
-                                        </div>
+                                        <span id="rating">4.2</span>
+                                        <span id="ratingsCount"
+                                            >294,243 ratings</span
+                                        >
                                     </div>
-                                    <span id="rating">4.2</span>
-                                    <span id="ratingsCount"
-                                        >294,243 ratings</span
-                                    >
-                                </div>
 
-                                <div id="buttons">
-                                    <button class="btn" id="amazon">
-                                        View on Amazon
-                                    </button>
-                                    <button class="btn" id="bookDetails">
-                                        View Details
-                                    </button>
-                                </div>
-                            </section>
+                                    <div id="buttons">
+                                        <button class="btn" id="amazon">
+                                            View on Amazon
+                                        </button>
+                                        <button class="btn" id="bookDetails">
+                                            View Details
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </main>
         </div>
     </body>
