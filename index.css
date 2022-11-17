@@ -441,6 +441,69 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
+
+	cursor: pointer;
+}
+
+#topicsCheckbox {
+	float: right;
+	height: 0;
+}
+
+#topicItems {
+	height: 300px;
+	overflow: hidden;
+	transition: all 500ms ease-in-out;
+}
+
+#topicsCheckbox:checked ~ #topicItems {
+	height: 0;
+}
+
+.arrow {
+	transition: all 500ms ease-in-out;
+}
+
+#topicsCheckbox:checked + .filterLabel .arrow {
+	transform: rotate(180deg);
+}
+
+#genresCheckbox {
+	height: 0;
+	float: right;
+}
+
+#genresItems {
+	height: 60px;
+	overflow: hidden;
+	transition: all 500ms ease-in-out;
+}
+
+#genresCheckbox:checked ~ #genresItems {
+	height: 0;
+}
+
+#genresCheckbox:checked + .filterLabel .arrow {
+	transform: rotate(180deg);
+}
+
+#authorsCheckbox {
+	height: 0;
+	float: right;
+}
+
+#authorsItems {
+	height: 60px;
+	overflow: hidden;
+	transition: all 500ms ease-in-out;
+}
+
+#authorsCheckbox:checked ~ #authorsItems {
+	height: 0;
+}
+
+#authorsCheckbox:checked + .filterLabel .arrow {
+	transform: rotate(180deg);
 }
 
 .input {

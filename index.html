@@ -103,154 +103,212 @@
                         </div>
                     </div>
 
-                    <div class="filterLabel">
+                    <input type="checkbox" id="topicsCheckbox" />
+                    <label class="filterLabel" for="topicsCheckbox">
                         <img src="./public/topics.svg" alt="topics" />
                         <span>TOPICS</span>
-                        <img src="./public/arrow.svg" alt="arrow" />
+                        <img
+                            src="./public/arrow.svg"
+                            alt="arrow"
+                            class="arrow"
+                        />
+                    </label>
+
+                    <div id="topicItems">
+                        <input class="input" placeholder="Search Topics..." />
+
+                        <div id="topics">
+                            <div class="checkboxLabel">
+                                <input class="checkbox" type="checkbox" />
+                                <label>Startup Fundraising</label>
+                            </div>
+                            <div class="checkboxLabel">
+                                <input class="checkbox" type="checkbox" />
+                                <label>Growth Hacking</label>
+                            </div>
+                            <div class="checkboxLabel">
+                                <input class="checkbox" type="checkbox" />
+                                <label>Leadership</label>
+                            </div>
+                            <div class="checkboxLabel">
+                                <input class="checkbox" type="checkbox" />
+                                <label>Startup Growth</label>
+                            </div>
+
+                            <div class="checkboxLabel">
+                                <input class="checkbox" type="checkbox" />
+                                <label>Idea to Launch</label>
+                            </div>
+                            <div class="checkboxLabel">
+                                <input class="checkbox" type="checkbox" />
+                                <label>Entrepreneurship</label>
+                            </div>
+                            <div class="checkboxLabel">
+                                <input class="checkbox" type="checkbox" />
+                                <label>Customer Acquisition</label>
+                            </div>
+                        </div>
                     </div>
-                    <input
-                        class="input"
-                        placeholder="Search Topics..."
-                    />
 
-                    <div id="topics">
-                        <div class="checkboxLabel">
-                            <input class="checkbox" type="checkbox" />
-                            <label>Startup Fundraising</label>
-                        </div>
-                        <div class="checkboxLabel">
-                            <input class="checkbox" type="checkbox" />
-                            <label>Growth Hacking</label>
-                        </div>
-                        <div class="checkboxLabel">
-                            <input class="checkbox" type="checkbox" />
-                            <label>Leadership</label>
-                        </div>
-                        <div class="checkboxLabel">
-                            <input class="checkbox" type="checkbox" />
-                            <label>Startup Growth</label>
-                        </div>
-
-                        <div class="checkboxLabel">
-                            <input class="checkbox" type="checkbox" />
-                            <label>Idea to Launch</label>
-                        </div>
-                        <div class="checkboxLabel">
-                            <input class="checkbox" type="checkbox" />
-                            <label>Entrepreneurship</label>
-                        </div>
-                        <div class="checkboxLabel">
-                            <input class="checkbox" type="checkbox" />
-                            <label>Customer Acquisition</label>
-                        </div>
-                    </div>
-
-                    <div class="filterLabel">
+                    <input type="checkbox" id="genresCheckbox" />
+                    <label class="filterLabel" for="genresCheckbox">
                         <img src="./public/genre.svg" alt="genres" />
                         <span>GENRES</span>
-                        <img src="./public/arrow.svg" alt="arrow" />
-                    </div>
-                    <input class="input" placeholder="Search Genres..." />
+                        <img
+                            src="./public/arrow.svg"
+                            alt="arrow"
+                            class="arrow"
+                        />
+                    </label>
 
-                    <div class="filterLabel">
+                    <div id="genresItems">
+                        <input class="input" placeholder="Search Genres..." />
+                    </div>
+
+                    <input type="checkbox" id="authorsCheckbox" />
+                    <label class="filterLabel" for="authorsCheckbox">
                         <img src="./public/author.svg" alt="author" />
                         <span>AUTHOR</span>
-                        <img src="./public/arrow.svg" alt="arrow" />
+                        <img
+                            src="./public/arrow.svg"
+                            alt="arrow"
+                            class="arrow"
+                        />
+                    </label>
+                    <div id="authorsItems">
+                        <input class="input" placeholder="Search Author..." />
                     </div>
-                    <input class="input" placeholder="Search Author..." />
                 </section>
 
                 <div id="content">
                     <section id="searchBar">
                         <input class="input" placeholder="Search..." />
                     </section>
-					<div id="results">
-						<span id="resultsText">Results: 537</span>
-						<input type="checkbox" />
-						<div id="cross">&times;</div>
-						<img id="filters" src="./public/menu.svg" alt="Menu">
-						<section id="modal">
-							<div id="modalContent">
-								<div id="popular">
-									<div class="box">
-										<input class="checkbox" type="checkbox" />
-									</div>
-			
-									<div id="leftTag">
-										<img
-											src="./public/red_tag.svg"
-											alt="Popular"
-											id="leftTagRect"
-										/>
-			
-										<img
-											src="./public/crown.svg"
-											alt="Crown"
-											id="leftCrown"
-										/>
-										<span id="leftPopular">Popular</span>
-									</div>
-								</div>
-			
-								<div class="filterLabel">
-									<img src="./public/topics.svg" alt="topics" />
-									<span>TOPICS</span>
-									<img src="./public/arrow.svg" alt="arrow" />
-								</div>
-								<input
-									class="input"
-									placeholder="Search Topics..."
-								/>
-			
-								<div id="topics">
-									<div class="checkboxLabel">
-										<input class="checkbox" type="checkbox" />
-										<label>Startup Fundraising</label>
-									</div>
-									<div class="checkboxLabel">
-										<input class="checkbox" type="checkbox" />
-										<label>Growth Hacking</label>
-									</div>
-									<div class="checkboxLabel">
-										<input class="checkbox" type="checkbox" />
-										<label>Leadership</label>
-									</div>
-									<div class="checkboxLabel">
-										<input class="checkbox" type="checkbox" />
-										<label>Startup Growth</label>
-									</div>
-			
-									<div class="checkboxLabel">
-										<input class="checkbox" type="checkbox" />
-										<label>Idea to Launch</label>
-									</div>
-									<div class="checkboxLabel">
-										<input class="checkbox" type="checkbox" />
-										<label>Entrepreneurship</label>
-									</div>
-									<div class="checkboxLabel">
-										<input class="checkbox" type="checkbox" />
-										<label>Customer Acquisition</label>
-									</div>
-								</div>
-			
-								<div class="filterLabel">
-									<img src="./public/genre.svg" alt="genres" />
-									<span>GENRES</span>
-									<img src="./public/arrow.svg" alt="arrow" />
-								</div>
-								<input class="input" placeholder="Search Genres..." />
-			
-								<div class="filterLabel">
-									<img src="./public/author.svg" alt="author" />
-									<span>AUTHOR</span>
-									<img src="./public/arrow.svg" alt="arrow" />
-								</div>
-								<input class="input" placeholder="Search Author..." />
-								
-							</div>
-						</section>
-					</div>
+                    <div id="results">
+                        <span id="resultsText">Results: 537</span>
+                        <input type="checkbox" />
+                        <div id="cross">&times;</div>
+                        <img id="filters" src="./public/menu.svg" alt="Menu" />
+                        <section id="modal">
+                            <div id="modalContent">
+                                <div id="popular">
+                                    <div class="box">
+                                        <input
+                                            class="checkbox"
+                                            type="checkbox"
+                                        />
+                                    </div>
+
+                                    <div id="leftTag">
+                                        <img
+                                            src="./public/red_tag.svg"
+                                            alt="Popular"
+                                            id="leftTagRect"
+                                        />
+
+                                        <img
+                                            src="./public/crown.svg"
+                                            alt="Crown"
+                                            id="leftCrown"
+                                        />
+                                        <span id="leftPopular">Popular</span>
+                                    </div>
+                                </div>
+
+                                <div class="filterLabel">
+                                    <img
+                                        src="./public/topics.svg"
+                                        alt="topics"
+                                    />
+                                    <span>TOPICS</span>
+                                    <img src="./public/arrow.svg" alt="arrow" class="arrow" />
+                                </div>
+                                <input
+                                    class="input"
+                                    placeholder="Search Topics..."
+                                />
+
+                                <div id="topics">
+                                    <div class="checkboxLabel">
+                                        <input
+                                            class="checkbox"
+                                            type="checkbox"
+                                        />
+                                        <label>Startup Fundraising</label>
+                                    </div>
+                                    <div class="checkboxLabel">
+                                        <input
+                                            class="checkbox"
+                                            type="checkbox"
+                                        />
+                                        <label>Growth Hacking</label>
+                                    </div>
+                                    <div class="checkboxLabel">
+                                        <input
+                                            class="checkbox"
+                                            type="checkbox"
+                                        />
+                                        <label>Leadership</label>
+                                    </div>
+                                    <div class="checkboxLabel">
+                                        <input
+                                            class="checkbox"
+                                            type="checkbox"
+                                        />
+                                        <label>Startup Growth</label>
+                                    </div>
+
+                                    <div class="checkboxLabel">
+                                        <input
+                                            class="checkbox"
+                                            type="checkbox"
+                                        />
+                                        <label>Idea to Launch</label>
+                                    </div>
+                                    <div class="checkboxLabel">
+                                        <input
+                                            class="checkbox"
+                                            type="checkbox"
+                                        />
+                                        <label>Entrepreneurship</label>
+                                    </div>
+                                    <div class="checkboxLabel">
+                                        <input
+                                            class="checkbox"
+                                            type="checkbox"
+                                        />
+                                        <label>Customer Acquisition</label>
+                                    </div>
+                                </div>
+
+                                <div class="filterLabel">
+                                    <img
+                                        src="./public/genre.svg"
+                                        alt="genres"
+                                    />
+                                    <span>GENRES</span>
+                                    <img src="./public/arrow.svg" alt="arrow" class="arrow" />
+                                </div>
+                                <input
+                                    class="input"
+                                    placeholder="Search Genres..."
+                                />
+
+                                <div class="filterLabel">
+                                    <img
+                                        src="./public/author.svg"
+                                        alt="author"
+                                    />
+                                    <span>AUTHOR</span>
+                                    <img src="./public/arrow.svg" alt="arrow" class="arrow" />
+                                </div>
+                                <input
+                                    class="input"
+                                    placeholder="Search Author..."
+                                />
+                            </div>
+                        </section>
+                    </div>
                     <section id="books">
                         <div class="book">
                             <div id="bookImage">
